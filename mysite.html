@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (min-width:871px){
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .header{
+        width:100%;
+        height:90px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        margin: auto;
+        background-color: white;
+        z-index: 1111;
+    }
+
+    .dash{
+        width: 30%;
+        height:100%;
+        text-align: center;
+        font-size: xx-large;
+        padding-top: 25px;
+        box-sizing: border-box;
+    }
+
+    .laze{
+        width:10%;
+        height:90px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .blaze{
+        width:10%;
+        height:90px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .caze{
+        width:10%;
+        height:90px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .wrap1{
+        text-transform: capitalize;
+        border-radius: 10px;
+        background-color: aqua;
+        display: none;
+    }
+
+    .menu{
+        padding-top: 20px;
+    }
+
+    .header .caze:hover .wrap1{
+        display: block;
+        background-color: skyblue;
+        height: 180px;
+        cursor: pointer;
+    }
+
+    .container{
+        width:100%;
+        position: absolute;
+        top: 90px;
+        z-index: 11;
+    }
+
+    .backimage{
+        width:100%;
+        height: 550px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .zolt{
+        width: auto;
+        height:10px;
+        position: relative;
+        top: 50px;
+        text-align: center;
+    }
+
+    .zolt2{
+        width: auto;
+        height:100px;
+        position: relative;
+        top: 70px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+
+    .zolt3{
+        width: auto;
+        height:10px;
+        position: relative;
+        top: 90px;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .radical{
+        margin-top: 150px;
+        margin-left: 600px;
+        height: 35px;
+        width:10%;
+        color:white;
+        background-color: black;
+        border: none;
+    }
+
+    .radical:hover{
+        margin-top: 150px;
+        margin-left: 600px;
+        height: 35px;
+        width:10%;
+        color: black;
+        background-color: white;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    section{
+        width: 100%;
+        height:400px;
+        display: flex;
+    }
+
+    .side{
+        width:50%;
+        height:100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .aside{
+        width:50%;
+        height:100%;
+    }
+
+    h2{
+        font-size: 40px;
+        text-transform: capitalize;
+        border-bottom: 4px solid black;
+        width: 41%;
+
+    }
+
+    .red{
+        height: 40px;
+        width: 20%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 190px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    .red:hover{
+        height: 40px;
+        width: 20%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 190px;
+        background-color: white;
+        color: black;
+        border: none;
+        transition: 3s;
+    }
+    
+    .served{
+        width:100%;
+        height:800px;
+        opacity: 0.8;
+    }
+
+    .line{
+        width:40px;
+        border-bottom: 1px solid black;
+        position: relative;
+        top:70px;
+        margin: auto;
+        margin-left: 100px;
+    }
+
+    .rose{
+       margin-top: 80px;
+       margin-left: 100px;
+
+    }
+
+    .rod{
+        margin-left: 100px;
+    }
+
+    .rat{
+        height:40px;
+        width: 10%;
+        margin-top: 150px;
+        margin-left: 300px;
+        color: white;
+        background-color: black;
+        border: none;
+        text-align: center;
+    }
+
+
+
+    .rat:hover{
+        height:40px;
+        width: 10%;
+        margin-top: 150px;
+        margin-left: 300px;
+        color: black;
+        background-color: white;
+        border: none;
+        text-align: center;
+    }
+
+    .wrap{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .fond{
+        border: 3px solid black;
+        width:28%;
+        height: 350px;
+
+    }
+
+    .rope{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .rape{
+        text-align: center;
+    }
+
+    
+    .cape{
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .cope{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .cupe{
+        text-align: center;
+    }
+
+    .bibi{
+        text-align: center;
+
+    }
+
+    .didi{
+        text-align: center;
+    }
+
+    .line2{
+        border-bottom: 1px solid black;
+        width:80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .line3{
+        border-bottom: 1px solid black;
+        width:80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .me{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .rack{
+        margin-top: 70px;
+        margin-left: 70px;
+        width: 60%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .rock{
+        margin-top: 45px;
+        margin-left: 70px;
+        width: 60%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .rail{
+        background-color: black;
+        color:white;
+        width: 23%;
+        height:35px;
+        border: none;
+        margin-top: 100px;
+        margin-left: 450px;
+        transition: 3s;
+    }
+
+    .rail:hover{
+        background-color: grey;
+        color:black;
+        width: 30%;
+        height:35px;
+        border: none;
+        margin-top: 100px;
+        margin-left: 570px;
+        cursor: pointer;
+    }
+
+
+    .footer{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: skyblue;
+       }
+
+    .foot1{
+        height:100%;
+        width:50%;
+
+    }
+
+    .foot2{
+        height:100%;
+        width:50%;
+
+    }
+
+    .roll{
+        width:20%;
+        height: 30px;
+        margin-top:20px;
+        margin-left: 430px;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .bed{
+        padding-top: 50px;
+        padding-left: 70px;
+    }
+
+    .bad{
+        padding-left: 70px;
+    }
+
+    .gad{
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+
+    .god{
+        padding-left: 70px;
+    }
+
+    .lad{
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+
+    .lod{
+        padding-top: 100px;
+        padding-left: 70px;
+    }
+
+    .bling{
+        padding-left:70px;
+    }
+
+    input{
+        outline: none;
+    }
+
+    textarea{
+        outline: none;
+    }
+}
+
+@media screen and (max-width:871px){
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .header{
+        width:100%;
+        height:90px;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        margin: auto;
+        background-color: white;
+        z-index: 1111;
+        font-size:13px;
+    }
+
+    .dash{
+        width: 20%;
+        height:100%;
+        text-align: center;
+        font-size: large;
+        padding-top: 30px;
+        box-sizing: border-box;
+        margin-left: 5px;
+    }
+
+    .laze{
+        width:50%;
+        height:auto;
+        text-align: center;
+        padding-top: 35px;
+        box-sizing: border-box;
+        margin-left: 5px;
+    }
+
+    .blaze{
+        width:50%;
+        height:auto;
+        text-align: center;
+        padding-top: 35px;
+        box-sizing: border-box;
+        margin-left: 15px;
+    }
+
+    .caze{
+        width:13%;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 10px;
+        margin-left: 5px;
+        box-sizing: border-box;
+    }
+
+    .wrap1{
+        text-transform: capitalize;
+        border-radius: 10px;
+        background-color: aqua;
+        display: none;
+        width: 70px;
+    }
+
+    .header .caze:hover .wrap1{
+        display: block;
+        background-color: skyblue;
+        height: 130px;
+        cursor: pointer;
+    }
+
+    .menu{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .container{
+        width:100%;
+        position: absolute;
+        top: 90px;
+        z-index: 11;
+    }
+
+    .backimage{
+        width:100%;
+        height: 550px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .zolt{
+        width: auto;
+        height:10px;
+        position: relative;
+        top: 50px;
+        text-align: center;
+    }
+
+    .zolt2{
+        width: auto;
+        height:100px;
+        position: relative;
+        top: 80px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 39px;
+    }
+
+    .zolt3{
+        width: auto;
+        height:10px;
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .radical{
+        margin-top: 170px;
+        margin-left: 140px;
+        height: 35px;
+        width:25%;
+        color:white;
+        background-color: black;
+        border: none;
+        outline: none;
+    }
+
+    .radical:hover{
+        margin-top: 170px;
+        margin-left: 140px;
+        height: 35px;
+        width:25%;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        transition: 1s;
+        border-top: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    section{
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side{
+        width:100%;
+        height:100%;
+        background-color: white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .aside{
+        width:100%;
+        height:100%;
+        margin: auto;
+    }
+
+    h2{
+        font-size: 40px;
+        text-transform: capitalize;
+        border-bottom: 4px solid black;
+        width: 41%;
+
+    }
+
+    .red{
+        height: 40px;
+        width: 35%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 120px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .red:hover{
+        height: 40px;
+        width: 35%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 120px;
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+        transition: 1s;
+        margin-bottom: 20px;
+    }
+    
+    .served{
+        width:100%;
+        height:1500px;
+        opacity: 0.8;
+    }
+
+    .line{
+        width:40px;
+        border-bottom: 1px solid black;
+        position: relative;
+        top:70px;
+        margin: auto;
+        margin-left: 30px;
+    }
+
+    .rose{
+       margin-top: 80px;
+       margin-left: 30px;
+
+    }
+
+    .rod{
+        margin-left: 30px;
+    }
+
+    .rat{
+        height:40px;
+        width: 10%;
+        margin-top: 150px;
+        margin-left: 300px;
+        color: white;
+        background-color: black;
+        border: none;
+        text-align: center;
+    }
+
+
+
+    .rat:hover{
+        height:40px;
+        width: 10%;
+        margin-top: 150px;
+        margin-left: 300px;
+        color: black;
+        background-color: white;
+        border: none;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .wrap{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .fond{
+        border: 3px solid black;
+        width:90%;
+        height: 350px;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+
+    .rope{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .rape{
+        text-align: center;
+    }
+
+    
+    .cape{
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .cope{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .cupe{
+        text-align: center;
+    }
+
+    .bibi{
+        text-align: center;
+
+    }
+
+    .didi{
+        text-align: center;
+    }
+
+    .line2{
+        border-bottom: 1px solid black;
+        width:80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .line3{
+        border-bottom: 1px solid black;
+        width:80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .me{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .rack{
+        margin-top: 70px;
+        margin-left: 47px;
+        width: 60%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .rock{
+        margin-top: 40px;
+        margin-left: 47px;
+        width: 60%;
+        height: 40px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .rail{
+        background-color: black;
+        color:white;
+        width: 70%;
+        height:35px;
+        border: none;
+        margin-top: 50px;
+        margin-left: 125px;
+    }
+
+    .rail:hover{
+        background-color: grey;
+        color:black;
+        width: 28%;
+        height:35px;
+        border: none;
+        margin-top: 50px;
+        margin-left: 125px;
+        cursor: pointer;
+        transition: 3s;
+    }
+
+
+    .footer{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: skyblue;
+       }
+
+    .foot1{
+        height:100%;
+        width:50%;
+
+    }
+
+    .foot2{
+        height:100%;
+        width:50%;
+
+    }
+
+    .roll{
+        width: 30%;
+        height: 30px;
+        margin-top:10px;
+        margin-left: 110px;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+
+    .bed{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .bad{
+        padding-left: 30px;
+    }
+
+    .gad{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .god{
+        padding-left: 30px;
+    }
+
+    .lad{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .lod{
+        padding-top: 80px;
+        padding-left: 30px;
+    }
+
+    .bling{
+        padding-left:30px;
+    }
+
+    input{
+        outline: none;
+    }
+
+    textarea{
+        outline: none;
+    }
+}
+.lop{
+    font-size: 30px;
+}
+.LO{
+    font-size: 50px;
+    padding: 100px;
+    color: red;
+}
+.pp{
+    margin-top: 150px;
+}
+}
+
+</style>
+<body>
+   
+
+   <div class="header">
+    <div class="dash">AMIRAH JIMOH</div>
+    <div class="blaze"><a href="#"  style="color: black;">Home</a></div>
+    <div class="laze"><a href="#w"  style="color: black;">About</a></div>
+    <div class="caze"><a href="#a"  style="color: black;">Services</a>
+    <!--div class="wrap1">
+        <div class="menu">web Design</div>
+        <div class="menu">web Dev.</div>
+        <div class="menu">app Dev.</div>
+        <div class="menu">graphics</div>
+    </div-->
+    </div>
+   
+    <div class="laze"><a href="#b"  style="color: black;">Contact</a></div>
+   
+   </div> 
+   <div class="container">
+    <div class="backimage" style="background-image:url(images/a.jpg);">
+ 
+
+        <div class="zolt"><h3 class="LO" >HELLO WORLD!</h3></div>
+        <div class="zolt2"><h1></h1 class="pp" >WELCOME TO MY SITE</h1></div>
+        <div class="zolt3"></div>
+    
+<form action="">
+    
+</form>
+</div>
+<section>
+    <div class="aside">
+        <img src="images/c.jpg" style="width:100%; height:100%;">
+    </div>
+    <div class="side"id="w">
+        <h2>Who Am I?</h2>
+        <h4 class="lop" >
+            My name is JIMOH AMIRAH.
+             I am 10 yrs old. I am in JSS2. 
+             I was born on OCTOBER 14,2011.
+             I attend Chaste Intellect International School.
+             I am WEB designer and A FASHION DESIGNER
+             I have 2 months of experience.
+             Ialso know how to speak French and Yoruba
+        </h4>
+     
+    </div>
+</section>
+<div class="served" style="background-image: url(images/a.jpg); background-repeat:no-repeat; background-position:center; background-size:cover;">
+    <div class="line"></div>
+<h1 class="rose" id="a">HOW I CAN</h1>
+<h1 class="rod">HELP YOU</h1>
+<!--button class="">Learn More</button-->
+<div class="wrap" >
+    <div class="fond"><h1 class="rope">WEB</h1><h1 class="rape">DESIGNING</h1><h5 class="bibi"></h5><h5 class="didi"> </h5><div class="line3"></div><h5 class="me"></h5><h5 class="me"></h5><input type="submit" value="100%" class="rack"></div>
+    <div class="fond"><h1 class="rope">FASHION</h1><h1 class="rape">DESIGNER</h1><h5 class="bibi"></h5><h5 class="didi"></h5><div class="line3"></div><h5 class="me"></h5><h5 class="me"></h5><input type="submit" value="100%" class="rack"></div>
+    <div class="fond"><h1 class="cope">FRENCH-TO-English</h1><h1 class="cape">TRANSLATOR</h1><h1 class="cupe"></h1><h5 class="bibi"></h5><h5 class="didi"></h5><div class="line2"></div><h5 class="me"></h5><h5 class="me"></h5><h5 class="me"></h5><input type="submit" value="100%" class="rock"></div>
+</div>
+<input type="submit" value="THESE ARE THE SERVICES I OFFER " class="rail">
+</div>
+<div class="footer" id="b">
+    <div class="foot1">
+        <h4 class="bed">Government Reserved Area</h4>
+        <h4 class="bad">Ilorin Kwara State Nigeria</h4>
+        <h4 class="gad">08053613239</h4>
+        <h4 class="god"></h4>
+        <h4 class="lad">amirahderayo@gmail.com</h4>
+        <h4 class="lod">&copy 2023 by Amirah Jimoh</h4>
+        <h4 class="bling">Proudly created with Flucky's World</h4>
+    </div>
+   
+</div>
+</div>
+
+</body>
+</html>
